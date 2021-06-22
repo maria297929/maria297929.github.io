@@ -1,0 +1,230 @@
+:root{
+    --primary-color: rgba(17, 6, 48 , 0.3);
+    --overlay-color: rgba(134, 18, 12, 0.85);
+    --first-color: #110630 ;
+    --second-color: #541D70 ;
+    --third-color: #A13D58  ;
+    --forth-color: #F88055 ;
+    --fifth-color: #FFBB53 ;
+    --menu-speed: 0.75s;
+}
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'PT Serif', serif;
+   color: #fff;
+   line-height: 1.4;
+}
+
+.navbar{
+    position: fixed;
+    padding: 2px;
+    z-index: 1;
+}
+
+.navbar-brand img {
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.container-h{
+   max-width: 960px;
+   margin: auto;
+   overflow: hidden;
+   padding: 0 1rem;
+}
+
+
+.showcase-home {
+   background-color: rgba(17, 6, 48 , 0.3);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+  
+}
+
+.showcase-home::before{
+    content: "";
+    background: url('../img/final_background.png') no-repeat center center/cover;
+   position: absolute;
+   top:0;
+   width: 100%;
+   height: 100%;
+   z-index:-1;
+}
+
+.showcase-home .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase-home h1 {
+    font-size: 4rem;
+}
+
+.showcase-home p{
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color:#fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.content{
+    background-image: linear-gradient(to bottom, #060313, #4c1e4f, #8f3761, #cd5a66, #fc8c64);
+}
+
+.content1{
+    background-image: linear-gradient(to bottom, #110630, #190e3c, #251249, #321655, #401961, #5a1b69, #731c6f, #8c1e73, #b12570, #d13669, #eb4e5f, #ff6b53);
+}
+
+.content2{
+    background-image: linear-gradient(to top, #19153e, #261d4b, #342558, #432d66, #523573, #6e3b7b, #8a4181, #a54784, #ca527b, #e7666e, #f9815f, #ffa153);
+}
+.content3{
+    background-image: linear-gradient(to top, #1a172f, #251f3e, #30274e, #3d2e5e, #4b366e, #623c77, #7a427e, #914883, #af527e, #c76178, #d97471, #e58a6d);
+}
+
+/* About*/
+
+.section{
+    width:100%;
+   padding-bottom: 30px;
+}
+
+.section-title {
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.lead{
+    line-height: 1.25;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    text-indent: 22px ;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.img-rounded{
+    border-radius: 100%;
+}
+
+#about{
+    padding-top: 20px;
+
+}
+
+.side-title{
+    font-size: 4rem;
+    color:var(--forth-color);
+    font-family: 'Montez', cursive;
+    padding-bottom: 30px;
+}
+
+
+.section-subtitle{
+    font-size: 3rem;
+    color:var(--forth-color) !important;
+    font-family: 'Montez', cursive;
+    padding-bottom: 30px;
+}
+
+.about{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#about .lead{
+    font-size: 1.35rem;
+    line-height: 1.3;
+    text-align: left;
+    padding-top: 20px;
+}
+
+#avatar{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media(max-width:768px) {
+    #about .side-title{
+        text-align: center;
+    }
+}
+/* /About/*/
+
+/*Services*/
+
+.section-header h2{
+    font-size:2rem;
+  color:#541D70;
+  }
+
+.feature-item{
+    padding: 20px;
+}
+
+.feature-icon{
+    font-size: 24px;
+    font-size: 1.5rem;
+    background-color:var(--fifth-color) ;
+    color:white;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.feature-title{
+    font-size: 28px;
+    font-size: 1.75rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--fifth-color) ;
+}
+
+.feature-description{
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+
