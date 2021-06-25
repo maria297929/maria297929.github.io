@@ -59,7 +59,7 @@
 <div class="container">
   <div class="row about">
         <div class="col-md-6">
-          <img class="img-rounded" id="avatar" src="img/avatar.jpg" alt="Me">
+          <img class="img-rounded" id="avatar" src="img/me.jpg" alt="Me">
         </div>
         <div class="col-md-6">
           <header class="section-header">
@@ -72,15 +72,14 @@
   </div>
   <div class="row about">
         <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <header class="section-header ">            
+        <div class="col-md-10 section-header">
+                   
             <p class="lead ab">You will find here pieces of my mind and soul. My digital artwork can be found in the shop section.</p>
-            <p class="lead ab">In terms of experience, I published here my portfolio, projects I worked on and services that I am qualified to provide. </p>
-            <p class="lead ab"> Feel free to reach out to me through email or the message section from you user account. In case any of my services could come to use for you, I will be more than happy to collaborate.</p>
+            <p class="lead ab">In terms of experience, I published here my portfolio, projects I worked on and services that I am qualified to provide. Feel free to reach out to me through email or the message section from you user account. In case any of my services could come to use for you, I will be more than happy to collaborate.</p>
             <p class="lead ab">Don’t forget, true Panic always starts on Mondays!  </p>
             <p class="lead ab"><a href="#contact" style="text-decoration:none; color:#F88055; font-weight:bold;">See you.</a></p>
-          </header>
-        </>
+          
+        </div>
   </div>      
 
 </section>

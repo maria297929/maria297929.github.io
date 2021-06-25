@@ -48,6 +48,7 @@ session_start();
     font-size: 1.3rem;
 }
 
+
 #carouselExampleControls {
     padding-top:10px;
     padding-bottom:20px;
@@ -68,6 +69,14 @@ session_start();
 
 .carousel-caption p{
   font-family: 'Merriweather', serif;
+}
+
+
+@media(max-width:768px) {
+  #carouselExampleControls{
+        max-width: 400px;
+        
+    }
 }
 
 </style>
@@ -144,11 +153,9 @@ $projects= $stmt->fetchAll(PDO::FETCH_ASSOC);
     <span class="visually-hidden">Next</span>
   </button>
 
-
 </div>
 <?php require_once "includes/footer.php"; ?>
 </div>
-
 <script src="includes/script.php"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>

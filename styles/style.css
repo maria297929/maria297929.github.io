@@ -159,7 +159,7 @@ body{
 
 
 .section-subtitle{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:var(--forth-color) !important;
     font-family: 'Montez', cursive;
     padding-bottom: 30px;
@@ -186,6 +186,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 @media(max-width:768px) {
     #about .side-title{

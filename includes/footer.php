@@ -70,7 +70,7 @@
                     
             <p class=" description-contact text-center"> If you didn't check my CV yet, what are you waiting for ?</p>
             <div class="cv-download">
-            <a href="includes/CV-Popa Maria-2020.pdf" download="CV-Popa Maria"><i class="far fa-arrow-alt-circle-down fa-3x"></i></a>
+            <a href="includes/CV_Popa_Maria.pdf" download="PopaMariaCV"><i class="far fa-arrow-alt-circle-down fa-3x"></i></a>
             </div>
          </div>
 
