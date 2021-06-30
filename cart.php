@@ -1,4 +1,5 @@
 <?php 
+ob_start();
 session_start();
 require_once "includes/db.php";
 if (isset($_SESSION['email']) && isset($_SESSION['user_id'])) {
@@ -156,7 +157,7 @@ if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['produc
         }
     }
     // Prevent form resubmission...
-    header('location: cart.php?page=cart');
+    header('location:cart.php?page=cart');
     exit;
 }
 
@@ -375,4 +376,5 @@ if ($products_in_cart) {
 <?php } else{
     header("Location: login.php");
     exit(); }
+ob_end_flush();
 ?>

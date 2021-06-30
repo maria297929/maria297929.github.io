@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Monday Panic</title>
     <?php require_once "includes/header.php"; 
-    require_once "includes/db.php";?>
+         require_once "includes/db.php";?>
   </head>
   <body> 
 <style>
@@ -99,7 +99,10 @@ session_start();
               <li><a href="projects.php">Projects</a></li>
               <li><a href="shop.php">Shop</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="login.php">Login</a></li>            
+              <?php if (isset($_SESSION['email']) && isset($_SESSION['user_id'])) {?>
+              <li><a href="user-dashboard.php">User Dashboard</a></>
+              <li><a href="reg-log/logout.php">Logout</a></li>
+              <?php } ?>        
             </ul>
           </div>
         
@@ -135,7 +138,7 @@ $projects= $stmt->fetchAll(PDO::FETCH_ASSOC);
  foreach ($projects as $project): ?>
 
     <div class="carousel-item ">
-        <img src="projects/<?=$project['img'];?>" class="d-block w-100"   alt="<?php echo $project['name'];?>">
+        <img src="projects/<?=$project['img'];?>" class="d-block w-100" alt="<?php echo $project['name'];?>">
      <div class="carousel-caption d-none d-md-block">
          <h5><?php echo $project['name'];?></h5>
          <p><?php echo $project['description'];?></p>

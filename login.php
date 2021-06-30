@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Monday Panic</title>
     <?php require_once "includes/header.php"; 
-    require_once "includes/db.php";?>
+  		  require_once "includes/db.php";?>
     <link rel="stylesheet"  href="styles/login.css"/>
 
   </head>
@@ -52,7 +52,6 @@
 
 	<input type="password" name="password" id="password-field" required="required"  placeholder="Password">
 	
-
     <button type="submit" >Sign Up</button>
 
   </form>

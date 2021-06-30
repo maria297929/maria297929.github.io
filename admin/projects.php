@@ -69,8 +69,8 @@ if (isset($_SESSION['admin_id']) && isset($_SESSION['email'])) { ?>
     <div class="profile_content">
       <div class="profile">
         <div class="profile_details">
-          <img src="../img/avatar.jpg" alt="">
-          <div class="name_job">
+        <img src="../img/me.jpg" alt="MP">     
+             <div class="name_job">
             <div class="name">Popa Maria</div>
             <div class="job">Web Designer</div>
           </div>
